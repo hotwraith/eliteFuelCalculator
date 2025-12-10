@@ -1,0 +1,79 @@
+/* Global layout */
+body {
+    font-family: system-ui, sans-serif;
+    background: linear-gradient(135deg, #1b2735, #090a0f);
+    color: #fff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    width: 320px;
+    text-align: center;
+}
+
+/* Input field */
+#energy {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+}
+
+/* Toggle row */
+.toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+}
+
+.label {
+    font-size: 0.95rem;
+}
+
+/* FEUR output box */
+#feur {
+    margin-top: 1rem;
+    min-height: 24px;
+    font-size: 1rem;
+    font-style: bold;
+}
+
+/* Button styling */
+#centerofcont {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    background: #4ea7ff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#centerofcont:hover {
+    background: #1e90ff;
+    transform: translateY(-2px);
+}
+
+.title {
+    font-size: larger;
+    font-style: bold;
+    padding: 5%;
+}
