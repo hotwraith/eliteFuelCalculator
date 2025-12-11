@@ -32,6 +32,18 @@ body {
     font-size: 1rem;
 }
 
+/* Input row */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.1rem;
+    /*background: rgba(255, 255, 255, 0.1);*/
+    /*padding: 0.6rem 0.8rem; */
+    border-radius: 8px;
+}
+
+
 /* Toggle row */
 .toggle-row {
     display: flex;
@@ -42,6 +54,33 @@ body {
     padding: 0.6rem 0.8rem;
     border-radius: 8px;
 }
+
+/* Contribution row */
+.contribution-row {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.0rem;
+}
+
+/* Contribution link */
+
+.contribution-link {
+    color: #dff8eb;
+    font-size: smaller;
+}
+
+.contribution-link:hover {
+    color: #16a8c7;
+    font-size: smaller;
+}
+
+.contribution-link:active {
+    color: #631d76;
+    font-size: smaller;
+}
+    
+    
 
 .label {
     font-size: 0.95rem;

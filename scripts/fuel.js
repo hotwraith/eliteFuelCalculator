@@ -95,11 +95,7 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-fetch('data/fuel.json')
-    .then((response) => response.json())
-    .then((json) => setUp(json))
-
-calcButton.addEventListener("click", () => {
+function calculate() {
     if(energyConso.value == '') {
         myResult.innerHTML = "Please input a value"
     }
@@ -120,4 +116,31 @@ calcButton.addEventListener("click", () => {
             }
         }
     }
+}
+
+fetch('data/fuel.json')
+    .then((response) => response.json())
+    .then((json) => setUp(json))
+
+calcButton.addEventListener("click", () => {
+    calculate()
+});
+
+energyConso.addEventListener("keyup", event => {
+    if(event.key != 'Enter') return;
+    else {
+        calculate()
+    }
+});
+
+checkBox.addEventListener("keyup", event => {
+    if(event.key != 'Enter' && event.key != 'Space') return;
+    else {
+        checkBox.checked = !checkBox.checked
+        calculate()
+    }
+});
+
+checkBox.addEventListener("click", event => {
+    calculate()
 });
