@@ -107,7 +107,7 @@ function calculate() {
         else {
             if(checkBox.checked) {
                 let rez = yx_SC[1]*parseFloat(energyConso.value) + yx_SC[0]
-                rez = Math.ceil(rez*100) 
+                rez = Math.round(rez*100) 
                 if(!isNaN(rez)){
                     myResult.innerHTML = rez/100 + " t/hr"
                 } else {
@@ -115,7 +115,7 @@ function calculate() {
                 }
             } else {
                 let rez = yx_normal[1]*parseFloat(energyConso.value) + yx_normal[0]
-                rez = Math.ceil(rez*100) 
+                rez = Math.round(rez*100) 
                 if(!isNaN(rez)){
                     myResult.innerHTML = rez/100 + " t/hr"
                 } else {
