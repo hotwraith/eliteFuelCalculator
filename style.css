@@ -21,6 +21,25 @@ body {
     text-align: center;
 }
 
+/* Info container */
+.info-container {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(8px);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+}
+
+/* Info row */
+
+.info-row {
+    text-align: left;
+    padding-top: 10px;
+}
+
 /* Input field */
 #energy {
     width: 100%;
@@ -78,6 +97,21 @@ body {
 .contribution-link:active {
     color: #631d76;
     font-size: smaller;
+}
+
+
+/* Info link */
+
+.info-link {
+    color: #fff;
+}
+
+.info-link:hover {
+    color: #16a8c7;
+}
+
+.info-link:active {
+    color: #631d76;
 }
     
     

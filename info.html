@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fuel Calculator</title>
+    <script async src="scripts/fuel.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="info-container">
+        <div class="title">Fuel Calculator</div>
+            <div class="info-row">Hello ! You made your way to the information page of this website ! So you might wonder how this works behind the scenes right ? I hope you do, because this is what this page is all about !</div>
+            <div class="info-row">As one can see, I'm not too familiar with CSS, so this page is probably a bit ugly, I hope the content on it stays readable though.</div>
+            <div class="info-row"> The concept:
+                <div class="info-row">- Data is collected empirically by CMDRs like myself, for different values of energy consumption and fuel consumption.</div>
+                <div class="info-row">- The following data is sent through <a class="contribution-link" style="font-size: medium;" href="https://docs.google.com/forms/d/e/1FAIpQLSc3VZDnOcxuwlGiUhJ8pHAM9KF7hHiwBx54VYVH2kHqF1gW_g/viewform">this GForm</a>.</div>
+                <div class="info-row">- Then, the data points are processed and we search the best approximation of a linear function that would pass through all points</div>
+            </div>
+            <div class="info-row"> The math:
+                <div class="info-row">- The mathematical reasoning behind the formula is plain and simple, we do a linear regression using the <a href="https://en.wikipedia.org/wiki/Linear_least_squares" class="contribution-link" style="font-size: medium;">least square method</a>.</div>
+                <div class="info-row">- On load, the page loads the data currently uploaded, and solves the equation system A^T*A*x = A^T*b twice, once for normal flight and once for super-cruise.</div>
+                <div class="info-row">- That's... about it ! This gives us the coefficient a and b of a linear function f(x)=a*x+b where x is our energy consumption in MW.</div>
+            </div>
+            <button id="centerofcont" onclick="document.location='index.html'">Return to calculator</button>
+    </div>
+
+</body>
+</html>
